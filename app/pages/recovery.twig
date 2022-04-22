@@ -1,0 +1,33 @@
+{% set page_data = {
+    title : 'Costify',
+    page  : 'index'
+} %}
+{% include '../header.twig' %}
+
+<div class="container">
+    <div class="auth">
+        <div class="form-wrapper">
+            <form class="form" action="/">
+                <div class="form-title">
+                    <h3>Забыли пароль</h3>
+                </div>
+                <div class="form-field">
+                    <input class="input" type="text" placeholder="E-mail">
+                </div>
+                <div class="form-field-btns">
+                    <button class="btn auth-btn">
+                        <span>Восстановить пароль</span>
+                    </button>
+                    <div class="form-field-links">
+                        <a class="link" href="auth.html">Войти</a>
+                        <a class="link" href="register.html">Регистрация</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+
+{% include '../footer.twig' %}

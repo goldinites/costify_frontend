@@ -1,0 +1,43 @@
+.menu {
+  font-size: 16px;
+  line-height: 20px;
+  &-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-item {
+    position: relative;
+    margin: 10px 0;
+    &:hover {
+      & .submenu {
+        transform: rotateX(0deg);
+      }
+    }
+    &.active {
+      & .menu-link {
+        color: #39c9ff;
+      }
+    }
+  }
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  transform: rotateX(-90deg);
+  padding: 20px;
+  min-width: 300px;
+  background-color: $white;
+  transform-origin: top;
+  transition: .3s;
+  box-shadow: 2px 2px 5px #0004;
+  border-radius: 8px;
+  &-item {
+    margin: 10px 0;
+    &.active {
+      & .submenu-link {
+        color: #8c00ff;
+      }
+    }
+  }
+}

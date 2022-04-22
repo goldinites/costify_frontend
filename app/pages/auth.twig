@@ -1,0 +1,36 @@
+{% set page_data = {
+    title : 'Авторизация',
+    page  : 'index'
+} %}
+{% include '../header.twig' %}
+
+<div class="container">
+    <div class="auth">
+        <div class="form-wrapper">
+            <form class="form" action="/">
+                <div class="form-title">
+                    <h3>Авторизация</h3>
+                </div>
+                <div class="form-field">
+                    <input class="input" type="text" placeholder="E-mail">
+                </div>
+                <div class="form-field">
+                    <input class="input" type="text" placeholder="Пароль">
+                </div>
+                <div class="form-field-btns">
+                    <button class="btn auth-btn">
+                        <span>Вход</span>
+                        <img src="../pictures/icons/login.svg" alt="">
+                    </button>
+                    <div class="form-field-links">
+                        <a class="link" href="register.html">Регистрация</a>
+                        <a class="link" href="recovery.html">Забыли пароль</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+{% include '../footer.twig' %}

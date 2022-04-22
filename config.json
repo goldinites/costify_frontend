@@ -1,0 +1,10 @@
+{
+  "grid" : {
+    "columns" : 12,
+    "container" : "1440px",
+    "drawGrid": true
+  },
+  "minifyCss" : true,
+  "minifyJs": true,
+  "minifyImages": true
+}

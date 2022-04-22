@@ -1,0 +1,44 @@
+// font
+$dir_Montserrat    : '../../fonts/Montserrat/';
+$font           : 400 15px/18px 'Montserrat';
+
+// colors
+$black          : #000000;
+$white          : #FFFFFF;
+$green          : #42b983;
+$dark_green     : #2dab72;
+$light_grey     : #d5d5d5;
+$orange         : #f38b04;
+$red            : #dc130d;
+
+
+// sizes
+$minWidth       : 320;
+$container      : 1440;
+
+// mixins
+@mixin responsiveFont($desktop_size, $mobile_size) {
+  font-size: calc(#{$mobile_size}px + (#{$desktop_size} - #{$mobile_size}) * (100vw - #{$minWidth}px) / (#{$container} - #{$minWidth}));
+}
+
+@mixin responsiveLineHeight($desktop_size, $mobile_size) {
+  line-height: calc(#{$mobile_size}px + (#{$desktop_size} - #{$mobile_size}) * (100vw - #{$minWidth}px) / (#{$container} - #{$minWidth}));
+}
+
+@mixin textStroke($color, $color_stroke, $stroke_width, $letter_spacing) {
+  color: #{$color};
+  text-shadow: #{$stroke_width} #{$stroke_width} #{$color_stroke}, -#{$stroke_width} -#{$stroke_width} #{$color_stroke}, #{$stroke_width} -#{$stroke_width} #{$color_stroke}, -#{$stroke_width} #{$stroke_width} #{$color_stroke};
+  letter-spacing: #{$letter_spacing};
+}
+
+@mixin prettyBorder($cols, $color) {
+  flex: 1 0 calc(100% / #{$cols});
+  border-right: 1px solid #{$color};
+  border-bottom: 1px solid #{$color};
+  &:nth-child(#{$cols}n + #{$cols}) {
+    border-right: none;
+  }
+  &:nth-last-child(-n + #{$cols}) {
+    border-bottom: none;
+  }
+}

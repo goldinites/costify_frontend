@@ -1,0 +1,181 @@
+* {
+  font: $font;
+  color: #333;
+}
+
+.container {
+  @include container();
+}
+
+.page-title {
+  font-size: 4rem;
+  line-height: 5.5rem;
+  font-weight: 600;
+  margin: 2rem 0;
+}
+.section-title {
+  font-size: 3rem;
+  line-height: 4.5rem;
+  font-weight: 600;
+  margin: 2rem 0;
+}
+h3 {
+  font-size: 2.3rem;
+  line-height: 2.7rem;
+  font-weight: 600;
+}
+
+.image-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+// include Montserrat
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat Light'), local('Montserrat-Light'),
+  url('#{$dir_Montserrat}Montserrat-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat Medium Italic'), local('Montserrat-MediumItalic'),
+  url('#{$dir_Montserrat}Montserrat-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat Thin'), local('Montserrat-Thin'),
+  url('#{$dir_Montserrat}Montserrat-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat ExtraLight Italic'), local('Montserrat-ExtraLightItalic'),
+  url('#{$dir_Montserrat}Montserrat-ExtraLightItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat Bold Italic'), local('Montserrat-BoldItalic'),
+  url('#{$dir_Montserrat}Montserrat-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+  url('#{$dir_Montserrat}Montserrat-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat ExtraLight'), local('Montserrat-ExtraLight'),
+  url('#{$dir_Montserrat}Montserrat-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat ExtraBold Italic'), local('Montserrat-ExtraBoldItalic'),
+  url('#{$dir_Montserrat}Montserrat-ExtraBoldItalic.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat Italic'), local('Montserrat-Italic'),
+  url('#{$dir_Montserrat}Montserrat-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+  url('#{$dir_Montserrat}Montserrat-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat Light Italic'), local('Montserrat-LightItalic'),
+  url('#{$dir_Montserrat}Montserrat-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat Black Italic'), local('Montserrat-BlackItalic'),
+  url('#{$dir_Montserrat}Montserrat-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat SemiBold Italic'), local('Montserrat-SemiBoldItalic'),
+  url('#{$dir_Montserrat}Montserrat-SemiBoldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('#{$dir_Montserrat}Montserrat-Regular.eot');
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+  url('#{$dir_Montserrat}Montserrat-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat Medium'), local('Montserrat-Medium'),
+  url('#{$dir_Montserrat}Montserrat-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
+  url('#{$dir_Montserrat}Montserrat-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat Black'), local('Montserrat-Black'),
+  url('#{$dir_Montserrat}Montserrat-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat Thin Italic'), local('Montserrat-ThinItalic'),
+  url('#{$dir_Montserrat}Montserrat-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+}
+
+// /include Montserrat
